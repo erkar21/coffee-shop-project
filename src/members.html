@@ -6,76 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrinkMe Cafe' Site | Home Page</title>
   </head>
-  <body>
+  <body class="h-screen flex flex-col">
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl">DrinkMe Cafe'</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a href="all-coffee.html">All Coffee</a></li>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="./all-coffee.html">All Coffee</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a>About Us</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center">Our Members</h2>
+    <main class="grow">
+      <section class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center">Our Members</h2>
 
-      <!-- member card container -->
-      <div class="flex justify-center gap-4">
-        <!-- member 1 -->
-        <article class="card w-64 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img
-              src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              class="rounded-xl"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </article>
+        <!-- member card container -->
+        <div class="flex justify-center gap-4">
+          <!-- member 1 -->
+          <article class="card w-64 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </article>
 
-        <!-- member 2 -->
-        <article class="card w-64 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img
-              src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              class="rounded-xl"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </article>
+          <!-- member 2 -->
+          <article class="card w-64 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </article>
 
-        <!-- member 3 -->
-        <article class="card w-64 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img
-              src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              class="rounded-xl"
-            />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </article>
-      </div>
+          <!-- member 3 -->
+          <article class="card w-64 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </article>
+        </div>
 
-      <!-- btn container -->
-      <div class="flex justify-center mt-8">
-        <button class="btn btn-active"><a href="add-member.html">Add New Member +</a></button>
-    </div>
-    </section>
+        <!-- btn container -->
+        <div class="flex justify-center mt-8">
+          <button class="btn btn-active">
+            <a href="./add-member.html">Add New Member +</a>
+          </button>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer container mx-auto items-center p-4 mt-6">
       <div class="items-center grid-flow-col">

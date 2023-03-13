@@ -6,164 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrinkMe Cafe' Site | All Coffee</title>
   </head>
-  <body>
+  <body class=" h-screenflex flex-col">
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl">DrinkMe Cafe'</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="members.html">Member</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./members.html">Member</a></li>
           <li><a>About Us</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- featured section -->
-    <section>
-      <div class="container mx-auto mt-6">
+    <section class="grow">
+      <div class="container mx-auto mt-4">
         <h2 class="text-3xl font-bold text-center">Featured Coffee</h2>
 
+        <!-- filter container -->
+        <div id="badge-container" class="container mx-auto flex gap-3 flex-wrap max-w-4xl justify-center py-4 mt-2">
+          
+        </div>
+
         <!-- cards container -->
-        <div class="flex justify-center flex-wrap gap-8 mt-6">
-          <!-- coffee card 1 -->
-          <article class="card w-64 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Black
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                Black coffee is as simple as it gets with ground coffee beans
-                steeped in hot water, served warm.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Cafe Noir</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- coffee card 2 -->
-          <article class="card w-64 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Black
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                Black coffee is as simple as it gets with ground coffee beans
-                steeped in hot water, served warm.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Cafe Noir</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- coffee card 3 -->
-          <article class="card w-64 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Black
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                Black coffee is as simple as it gets with ground coffee beans
-                steeped in hot water, served warm.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Cafe Noir</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- coffee card 4 -->
-          <article class="card w-64 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Black
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                Black coffee is as simple as it gets with ground coffee beans
-                steeped in hot water, served warm.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Cafe Noir</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- coffee card 5 -->
-          <article class="card w-64 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Black
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                Black coffee is as simple as it gets with ground coffee beans
-                steeped in hot water, served warm.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Cafe Noir</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- coffee card 6 -->
-          <article class="card w-64 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Black
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                Black coffee is as simple as it gets with ground coffee beans
-                steeped in hot water, served warm.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Cafe Noir</div>
-              </div>
-            </div>
-          </article>
+        <div id="feature-container" class="flex justify-center flex-wrap gap-8 mt-6">
+         
         </div>
       </div>
     </section>
@@ -226,6 +95,7 @@
       </div>
     </footer>
 
+    <script type="module" src="./all-coffee.js"></script>
     <script type="module" src="/main.js"></script>
 
     <!-- <li tabindex="0">

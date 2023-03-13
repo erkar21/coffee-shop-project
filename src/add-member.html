@@ -6,39 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrinkMe Cafe' Site | Home Page</title>
   </head>
-  <body>
+  <body class="h-screen flex flex-col">
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl">DrinkMe Cafe'</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a href="all-coffee.html">All Coffee</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="members.html">Members</a></li>
+          <li><a href="./all-coffee.html">All Coffee</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./members.html">Members</a></li>
         </ul>
       </nav>
     </header>
 
-    <section>
+    <main class="grow">
+      <section>
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-center">Add a new member</h2>
         <form class="max-w-md mx-auto">
           <div class="form-control w-full max-w-xs mx-auto">
             <label class="label"> Name </label>
             <input
+              id="name"
               type="text"
               placeholder="Example:David..."
               class="input input-bordered w-full max-w-xs"
+              required
             />
           </div>
 
           <div class="form-control w-full max-w-xs mx-auto">
-            <label class="label"> Username </label>
+            <label class="label"> Job </label>
             <input
+              id="job"
               type="text"
-              placeholder="Example:david@123..."
+              placeholder="Example:Manager..."
               class="input input-bordered w-full max-w-xs"
+              required
             />
           </div>
 
@@ -49,11 +54,12 @@
             />
           </div>
           <div class="flex justify-center">
-            <button class="btn btn-active mt-6">Upload</button>
+            <button id="submit-btn" class="btn btn-active mt-6">Upload</button>
           </div>
         </form>
       </div>
     </section>
+    </main>
 
     <footer class="footer container mx-auto items-center p-4 mt-6">
       <div class="items-center grid-flow-col">
@@ -114,6 +120,7 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="./add-member.js"></script>
 
     <!-- <li tabindex="0">
             <a>

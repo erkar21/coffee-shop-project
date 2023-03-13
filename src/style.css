@@ -15,3 +15,13 @@ h1, h2, h3 {
 html {
     scroll-behavior: smooth;
 }
+
+@layer components {
+    .feature-style {
+        @apply card w-64 bg-base-100 shadow-xl
+    }
+
+    .custom-badge {
+        @apply px-2 py-1 bg-blue-200 text-blue-600 font-semibold rounded-full hover:shadow-md
+    }
+}
